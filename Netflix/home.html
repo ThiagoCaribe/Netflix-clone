@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body >
+    <div class="modal fade" id="modalFilme">
+        <div class="modal-dialog" >
+            <div class="moda-content">
+                <div class="modal-hero">
+                    <img src="./assets/image/diabo-de-cada-dia.png" />
+                    <div class="col-12" class="modal-hero-infos">
+                        <button class="btn btn-lg btnCustomW">
+                            <span class="material-icons">play_arrow</span> Assistir
+                        </button>
+                        <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                            <span class="material-icons ">play_arrow</span>
+                        </a>
+                        <a href="# " class="btn btnCuston btn-lg border-white rounded-cicle btnSegundario text-white" >
+                            <span class="material-icons">thumb_up</span>
+                        </a>
+                        <a href="# " class="btn btnCuston btn-lg border-white rounded-cicle btnSegundario text-white">
+                            <span class="material-icons">thumb_down</span>
+                        </a> 
+                        <a href="# " class="btn btnCuston btn-lg border-white rounded-cicle btnSegundario text-white">
+                            <span class="material-icons">add</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-7">
+                                <p class="filme_descricao text-white">
+                                    Pregadores Profanos. Autoridades Corruptas. Amantes Assassinos. Numa cidade cheia de pecadores, um jovem buscajustiça.                  
+                                </p>
+                            </div>
+                            <div class="col-5">
+                                <p class="filme_elenco text-white" >
+                                    Elenco:
+                                    <text>Silvio Sampaio, Juliana Righi, Omar Sampaio, Mikael
+                                      Lopes.</text>
+                                    <br>
+                                    <br>
+                                    Gêneros: <text>Ação, Aventura, Dramático. </text>
+                                    <br>
+                                    <br>
+                                    Cenas e momentos: <text>Violentos.</text>
+                                  </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                <h3 class="text-white">Episodios</h3>
+                            </div>
+                            <div class="col-5 text-right">
+                                <select class="form-control">
+                                    <option value="">Temporada 1</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <ul class="lista_epiodeos">
+                                <li>
+                                    <div class="row">
+                                        <div class="col-1 my-auto text-center">
+                                            <h3 class="text-white">1</h3>
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./assets/image/capa-filme.png" class="img-fluid"/>
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-white">Nome do episodio</h6>
+                                            <p class="text-muted">
+                                                
+                          There are many variations of passages of Lorem Ipsum
+                          available, but the majority have suffered alteration
+                          in some form, by injected humour.
+                        
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fuid">
+        <header class="row">
+            <div class="col-2">
+                <img src="./assets/image/logo.png " class="w-70 mr-1 img-log" />
+            </div>
+            <div class="col-8">
+                <ul class="menuList">
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Series</a>
+                    </li>
+                    <li>
+                        <a href="#">Filmes</a>
+                    </li>
+                    <li>
+                        <a href="#">Mais Recentes</a>
+                    </li>
+                    <li>
+                        <a href="#">Minha Lista</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+    <div class="container-fluid" id="hero">
+        <div class="container">
+            <div class="row" id="heroInfo">
+                <div class="col-6">
+                    <img class="logo" src="./assets/image/diabo-de-cada-dia.png" /> 
+                    <h2 class="text-white"><img src="/Netflix/assets/image/badge-top-10.png"/> de hoje no Brasil</h2>
+                    <p class="text-white">Pregadores Profanos. Autoridades Corruptas. Amantes Assassinos. Numa cidade cheia de pecadores, um jovem busca justiça.</p>
+                    <br />
+                    <button class="btn btn-lg btnCustomW">
+                        <span class="material-icons">play_arrow</span> Assistir
+                    </button>
+                    <button class="btn btn-lg btnCustomT">
+                        <span class="material-icons">info</span>Mais informações
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mainContent">
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">Populares da Netflix</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                     <ul class="filmeLista">
+                        <li class="filme" data-toggle="modal" data-target="#modalFilme">
+                            <img class="img-fluid" src="./assets/image/filmes/100.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/100.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/django.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/altered-carbon.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/breaking-bad.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                     </ul>    
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">Populares da Netflix</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                     <ul class="filmeLista">
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/100.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/100.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/django.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/altered-carbon.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/breaking-bad.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                     </ul>    
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-white">Populares da Netflix</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                     <ul class="filmeLista">
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/100.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/100.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/django.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/altered-carbon.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                        <li class="filme">
+                            <img class="img-fluid" src="./assets/image/filmes/breaking-bad.jpg"/>
+                            <div class="filmeInfo">
+                                <div class="col-12">
+                                    <a href="#" class="btn btnCuston btn-light rounded-cicle">
+                                        <span class="material-icons ">play_arrow</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white" >
+                                        <span class="material-icons">thumb_up</span>
+                                    </a>
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">thumb_down</span>
+                                    </a> 
+                                    <a href="# " class="btn btnCuston  border-white rounded-cicle btnSegundario text-white">
+                                        <span class="material-icons">add</span>
+                                    </a>
+                                </div> 
+                                <p>T3:EP5<text class="text-white">"Meu episodio"</text></p>
+                            </div>
+                        </li>
+                     </ul>    
+            </div>
+        </section>
+    </div>
+</body>
+</html>

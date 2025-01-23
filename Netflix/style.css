@@ -1,0 +1,278 @@
+body{
+    background-color: black;
+}
+
+header{
+    padding: 50px;
+    background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.69) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+
+}
+header img {
+    width: 150px;
+  }
+.btnCustomW{
+    background-color: #fff;
+    
+}
+.btnCustomT{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+.btnCustomT :hover{
+ color: #fff;
+ opacity: 0.8;
+}
+.btnCustomW:hover{
+    opacity: 0.8;
+}
+.btnCuston{
+    padding: 5px 7px !important;
+}
+.btnSegundario{
+    opacity: 0.5;
+}
+
+/*Login*/
+
+body.bg-body{
+    background-color: black;
+    background-image: url('assets/image/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+}
+
+
+#caixa_login{
+    position: center;
+    background-color: black;
+    padding: 30px;
+    margin-top: 150px;
+
+}
+.form-control{
+    color: aliceblue;
+    background-color: gray;
+    opacity: 50%;
+}
+.img-fluido{
+    width: 25px;
+    height: 25px;
+}
+
+/*Home*/
+
+.img-log{
+    width: 200px;
+    height: 75px;
+}
+
+.menuList{
+    list-style: none;
+    padding-left: 0;
+    padding: top 7px;
+}
+
+.menuList li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.menuList li a {
+    color: #fff;
+}
+
+/*Hero*/
+
+#hero{
+    height: 700px;
+    background-image: url(./assets/image/capa-filme.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+#hero::after{
+    content: '';
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    top: calc(700 - 150);
+}
+#heroInfo{
+    padding: 0;
+    margin-top: 170px;
+    z-index: 3;
+    position: relative;
+}
+
+#heroInfo img.logo{
+    margin-bottom: 50px;
+    width: 500px;
+}
+#heroInfo h1{
+    margin-bottom: 20px;
+}
+#heroInfo h1 img{
+    width: 35px;
+    margin-top: -10px;
+    margin-right: 15px;
+}
+#mainContent{
+    margin-top: 700px;
+}
+.filmeLista{
+    overflow-x:  hidden;
+    list-style: none;
+    padding: 0;
+    white-space: nowrap;
+    display: block;
+    border: 1px solid transparent;
+}
+.filmeLista::-webkit-scrollbar{
+    display: none;
+}
+.filme{
+    display: inline-block;
+    width: 250px;
+    border-radius: 10px;
+    overflow: auto;
+    transition: 0.5s;
+    border: 1px solid transparent;
+
+}
+.filme:first-child{
+    margin-left: 70px;
+}
+.filmeInfo{
+    background-color: #171717;
+    padding: 10px;
+    height: 100px;
+    width: 100%;   
+    transform: scale(0);
+}
+.filme:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 999;
+    transform: 0.5s;
+}
+.filme:hover .filmeInfo{
+    transform: scale(1);
+    transform: 0.5s;
+}
+.filmeInfo p {
+    color: #7E7B7B;
+    font-size: 12px;
+}
+
+.filmeInfo .col-12{
+    margin-top: 5px;
+}
+
+.filmeInfo .col-12:first-child{
+    margin-bottom: 20px;
+}
+section{
+    margin-bottom: -100px;
+    position: relative;
+}
+section:hover{
+    z-index: 9;
+}
+/*Modal*/
+
+.modal-dialog, .modal-content{
+    background-color: #171717;
+}
+.modal-dialog{
+    max-width: 600px;
+}
+.modal-hero{
+    height: 300px;
+    background-image: url('./assets/image/capa-filme.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+.modal-hero::after{
+    content: '';
+    width: 100%;
+    height: 200px;
+    display: block;
+    background: linear-gradient(180deg, rgba(23, 23, 23, 0) 0%, #171717 100%);
+    position: absolute;
+    left: 0;
+    margin-top: -115px;
+    z-index: 1;
+}
+.modal-hero img{
+    width: 250px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+}
+.modal-hero-infos{
+    position: relative;
+    z-index: 2;
+}
+.modal-hero-infos button:first-child{
+    margin-right: 20px;
+
+}
+.filme_descricao{
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.filme_elenco{
+    color: rgba(255, 255, 255, 0.55) !important; 
+    font-size: 13px;
+}
+.filme_elenco text{
+    color: #fff;
+}
+
+.lista_epiodeos{
+    list-style: none;
+    padding: 0;
+
+}
+.lista_epiodeos li{
+    padding: 20px;
+}
+.lista_epiodeos li p {
+    font-size: 13px;
+}
+
+.lista_epiodeos li:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+.lista_epiodeos li {
+    padding: 20px;
+  }
+  
+.lista_epiodeos li p {
+    font-size: 13px;
+  }
+  
