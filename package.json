@@ -1,5 +1,22 @@
 {
+  "name": "netflixb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js"
+  },
+  "keywords": [],
+  "author": "Tcaribe",
+  "license": "ISC",
+  "description": "backend ",
   "dependencies": {
-    "cors": "^2.8.5"
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
+    "router": "^2.0.0",
+    "underscore": "^1.13.7"
   }
 }
